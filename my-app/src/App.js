@@ -4,6 +4,7 @@ import RedBox from './RedBox';
 import Layout from './Layout';
 import GuessTheNumber from './GuessTheNumber';
 import YouClicked from './YouClicked';
+import CharacterCounter from './CharacterCounter';
 import logo from './logo.svg';
 import './App.css';
 
@@ -76,8 +77,10 @@ class App extends Component {
 
         <hr />
 
+        <CharacterCounter />
 
-        
+        <hr />
+
       </div>
     );
   }
