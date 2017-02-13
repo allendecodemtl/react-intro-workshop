@@ -31,6 +31,8 @@ class YouClicked extends React.Component{
           </button>
           <p></p>
           <label for="message">You have clicked the button {this.state.timesClicked} times</label>
+          <p></p>
+          <label for="resetmessage">You reset {this.state.timeReset} times</label>
       </div>
     );
   }

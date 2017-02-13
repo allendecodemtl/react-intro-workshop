@@ -17,6 +17,7 @@ class CharacterCounter extends React.Component{
     this.setState({ currentInput: value });
   }
 
+
   render() {
     return (
       <div>

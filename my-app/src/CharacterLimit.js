@@ -1,6 +1,6 @@
 import React from 'react';
 
-class CharacterCounter extends React.Component{
+class CharacterLimit extends React.Component{
 
   constructor(){
     super();
@@ -22,10 +22,10 @@ class CharacterCounter extends React.Component{
       <div>
           <input type="text" ref="inputCounter" onInput={this._handleInput}/>
           <p></p>
-          <label for="message"> {this.state.currentInput.length} Characters</label>
+          <label for="message"> {this.props.limit - this.state.currentInput.length} Characters</label>
       </div>
     );
   }
 };
 
-export default CharacterCounter;
+export default CharacterLimit;

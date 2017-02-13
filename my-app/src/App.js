@@ -5,6 +5,7 @@ import Layout from './Layout';
 import GuessTheNumber from './GuessTheNumber';
 import YouClicked from './YouClicked';
 import CharacterCounter from './CharacterCounter';
+import CharacterLimit from './CharacterLimit';
 import logo from './logo.svg';
 import './App.css';
 
@@ -80,6 +81,8 @@ class App extends Component {
         <CharacterCounter />
 
         <hr />
+
+        <CharacterLimit limit={140}/>
 
       </div>
     );
