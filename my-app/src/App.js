@@ -6,6 +6,9 @@ import GuessTheNumber from './GuessTheNumber';
 import YouClicked from './YouClicked';
 import CharacterCounter from './CharacterCounter';
 import CharacterLimit from './CharacterLimit';
+import NumberGuessing from './NumberGuessing';
+import GithubSearch from './GithubSearch';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -83,6 +86,17 @@ class App extends Component {
         <hr />
 
         <CharacterLimit limit={140}/>
+
+        <hr />
+
+        <NumberGuessing />
+
+        <hr />
+
+        <GithubSearch />
+
+        <hr />
+
 
       </div>
     );
