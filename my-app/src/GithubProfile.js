@@ -9,12 +9,22 @@ class GithubProfile extends React.Component {
     this.state = {};
   }
 
-  componentDidMount() {
+  fetchData() {
     fetch(`https://api.github.com/users/${this.props.username}`)
     .then(response => response.json())
     .then(function(data) {
       this.setState({data: data});
     }.bind(this));
+  }
+
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  componentDidUpdate(prevProps, prevState){
+    if (prevProps.username !== this.props.username){
+      this.fetchData();
+    }
   }
 
   render() {

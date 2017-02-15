@@ -9,9 +9,6 @@ class SearchForm extends React.Component {
     e.preventDefault();
     var username = this.refs.userInput.value
     this.props.onSearch(username)
-
-    // console.log(this.refs.userInput.value);
-    //console.log(this.props.onSearch);
   }
 
   render() {
